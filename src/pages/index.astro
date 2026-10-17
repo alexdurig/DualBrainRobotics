@@ -1,11 +1,30 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import "../styles/global.css";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dual Brain Robotics</title>
+  </head>
+
+  <body>
+    <section style="padding: 4rem; text-align: center;">
+      <h1 style="font-size: 3rem; margin-bottom: 1rem;">
+        Dual Brain Robotics
+      </h1>
+
+      <p style="font-size: 1.3rem; max-width: 700px; margin: 0 auto;">
+        A new robotics architecture inspired by bilateral cognition —
+        where machines learn, adapt, and perceive through dual-channel intelligence.
+      </p>
+
+      <div style="margin-top: 2rem;">
+        <a href="/architecture" style="padding: 1rem 2rem; background: #6b46c1; color: white; border-radius: 8px; text-decoration: none;">
+          Explore the Architecture
+        </a>
+      </div>
+    </section>
+  </body>
+</html>
+copilo
