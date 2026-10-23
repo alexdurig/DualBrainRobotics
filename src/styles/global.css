@@ -43,6 +43,11 @@ a:hover {
   text-align: center;
   padding: 6rem 2rem;
 }
+.hero-logo {
+  width: 300px;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
 
 .button {
   display: inline-block;
