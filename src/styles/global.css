@@ -23,7 +23,13 @@ main {
   margin: 0 auto;
   padding: 2rem;
 }
-
+.patent-status {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
 /* Typography */
 
 h1,
