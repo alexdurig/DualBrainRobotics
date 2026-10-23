@@ -1,7 +1,9 @@
 <header>
   <nav class="navbar">
-    <a href="/" class="logo">
-      Dual Brain Robotics
+
+    <a href="/" class="brand">
+      <img src="/SVG-DBR-LOGO.png" alt="Dual Brain Robotics Logo" />
+      <span>Dual Brain Robotics</span>
     </a>
 
     <div class="links">
@@ -10,6 +12,7 @@
       <a href="/patent">Patent</a>
       <a href="/about">About</a>
     </div>
+
   </nav>
 </header>
 
@@ -18,13 +21,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   border-bottom: 1px solid #ddd;
 }
 
-.logo {
-  font-size: 1.4rem;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.3rem;
   font-weight: bold;
+  text-decoration: none;
+  color: #2d3748;
+}
+
+.brand img {
+  width: 42px;
+  height: 42px;
 }
 
 .links {
