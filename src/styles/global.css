@@ -143,7 +143,9 @@ a:hover {
 .section {
   margin: 5rem 0;
 }
-
+.about-content {
+  text-align: left;
+}
 /* Footer */
 
 footer {
