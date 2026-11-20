@@ -4,6 +4,22 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <MainLayout>
 
+  <section class="section video-section">
+    <h2>Introducing Dual Brain Robotic Architecture</h2>
+    <p>Watch the overview.</p>
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/-gExxebFoWM"
+        title="Introducing Dual Brain Robotic Architecture"
+        frameborder="0"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
+
   <section class="hero">
 
     <img
@@ -167,5 +183,29 @@ Dr. Alexander Durig, PhD | Technical Writer | Owner & Founder, Dual Brain Roboti
 </section>
 
 </section>
+
+<style>
+  .video-section {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+  .video-wrapper {
+    position: relative;
+    max-width: 900px;
+    margin: 2rem auto 0;
+    aspect-ratio: 16 / 9;
+  }
+
+  .video-wrapper iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  }
+</style>
 
 </MainLayout>
