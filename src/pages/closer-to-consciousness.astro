@@ -5,24 +5,64 @@ import MainLayout from "../layouts/MainLayout.astro";
 <MainLayout>
 
   <section class="hero">
-    <h1>Closer to Consciousness</h1>
-    <p class="lead">
-      The First Strong Theory of Consciousness — Alexander Durig, 2023.
-    </p>
+    <h1 class="sr-only">Closer to Consciousness: The First Strong Theory of Consciousness</h1>
+    <img
+      src="/c2c/c2c-hero.jpg"
+      alt="Closer to Consciousness by Alexander Durig. &quot;Consciousness is the universe's way of getting to know itself.&quot;"
+      class="c2c-banner"
+    />
   </section>
 
   <section class="section">
     <h2>The Book</h2>
+    <div class="book">
+      <figure class="book-cover">
+        <img src="/c2c/c2c-cover.jpg" alt="Cover of Closer to Consciousness by Alexander Durig" />
+        <figcaption>Cover and Graphic Design by Irina Krasko</figcaption>
+      </figure>
+      <div class="book-details">
+        <p>
+          <em>Closer to Consciousness: The First Strong Theory of Consciousness</em>
+          (AuthorHouse, 2023) advances a theory of consciousness built on a single proposition:
+          the two cerebral hemispheres operate as two interacting brains, each aware of the world
+          and of the other's perception of it.
+        </p>
+        <p>
+          Rather than locating consciousness in one place or one process, the theory treats it as
+          arising from the loop between them — a relation the book calls the
+          <strong>System of Interactive Reflexivity</strong>.
+        </p>
+        <ul class="book-facts">
+          <li>Paperback, 224 pages · ISBN 9781665579162 · $39.99</li>
+          <li>Also available in hardcover and ebook</li>
+        </ul>
+        <p class="book-links">
+          <a class="button" href="https://www.authorhouse.com/" target="_blank" rel="noopener">Available now</a>
+          · <a href="/c2c/c2c-poster.pdf">Poster (PDF)</a>
+          · <a href="/c2c/blue-ink-review.pdf">Review (PDF)</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Praise</h2>
+    <blockquote class="review">
+      <p>
+        &ldquo;Closer to Consciousness is a serious but accessible work of scholarly substance.
+        While it may face challenges from academics entrenched in their own schools of thought,
+        it will prove valuable to open-minded students, providing a reset switch in the thinking
+        about the most human characteristics of our interior experiences.&rdquo;
+      </p>
+      <p>
+        &ldquo;Has Durig settled the debate? No, but with Closer to Consciousness he's
+        re-legitimized the study of consciousness in a way that could ground meaningful
+        scientific innovation.&rdquo;
+      </p>
+      <cite>— Blue Ink Reviews, April 2023</cite>
+    </blockquote>
     <p>
-      <em>Closer to Consciousness: The First Strong Theory of Consciousness</em> (AuthorHouse, 2023)
-      advances a theory of consciousness built on a single proposition: the two cerebral
-      hemispheres operate as two interacting brains, each aware of the world and of the other's
-      perception of it.
-    </p>
-    <p>
-      Rather than locating consciousness in one place or one process, the theory treats it as
-      arising from the loop between them — a relation the book calls the
-      <strong>System of Interactive Reflexivity</strong>.
+      <a href="/c2c/blue-ink-review.pdf">Read the full Blue Ink review (PDF)</a>
     </p>
   </section>
 
@@ -78,3 +118,93 @@ import MainLayout from "../layouts/MainLayout.astro";
   </section>
 
 </MainLayout>
+
+<style>
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .c2c-banner {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .book {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .book-cover {
+    margin: 0;
+    flex: 0 0 260px;
+    text-align: center;
+  }
+
+  .book-cover img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  }
+
+  .book-cover figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .book-details {
+    flex: 1 1 420px;
+  }
+
+  .book-facts {
+    color: #444;
+  }
+
+  .book-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.75rem;
+  }
+
+  .book-links .button {
+    margin-top: 0;
+  }
+
+  .review {
+    margin: 0 0 1.25rem 0;
+    padding: 1.25rem 1.5rem;
+    border-left: 4px solid var(--primary);
+    background: #f4f2fa;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .review p {
+    margin: 0 0 1rem 0;
+  }
+
+  .review cite {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--secondary);
+  }
+
+  @media (max-width: 700px) {
+    .book-cover {
+      flex-basis: 200px;
+    }
+  }
+</style>
