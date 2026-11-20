@@ -72,8 +72,8 @@ import MainLayout from "../layouts/MainLayout.astro";
       <li>The run itself, with its seed and code version recorded</li>
       <li>Data and charts</li>
       <li>A record in the cumulative database</li>
-      <li>A one-page report</li>
-      <li>A one-minute video overview</li>
+      <li>An overview report</li>
+      <li>An overview video</li>
     </ul>
     <p>
       Taken together, the intention is a preponderance of evidence — many small results
@@ -82,13 +82,33 @@ import MainLayout from "../layouts/MainLayout.astro";
   </section>
 
   <section class="section">
+    <h2>Simulation Results</h2>
+    <p>
+      Each completed simulation posts two things here: its <strong>overview video</strong>,
+      about one minute long — the scenario, the robot's path through it, and the results —
+      and its <strong>overview report</strong>, the one-page summary of the run.
+    </p>
+    <h3>S-001 — Single-bin pick-and-deliver to the conveyor belt</h3>
+    <ul>
+      <li><a href="/simulations/s001/overview-video.mp4">Overview video — S-001</a></li>
+      <li><a href="/simulations/s001/overview-report.pdf">Overview report — S-001 (PDF)</a></li>
+    </ul>
+    <p>
+      <em>
+        Verdict CONFIRMED: the DBRA robot trailed on attempt 1, converged by attempt 5, and
+        made zero corrections from attempt 4 onward. A mathematical model, reproducible from
+        seed 20261119 — not a physical machine.
+      </em>
+    </p>
+  </section>
+
+  <section class="section">
     <h2>Status</h2>
     <p>
       The program began in November 2026. The design phase is underway, and the first
-      simulations are being run as their designs are approved. Results will be presented here
-      as they become available.
+      simulations are being run as their designs are approved. Results are posted here as
+      they become available.
     </p>
-    <p>Detailed simulation presentations are in preparation.</p>
   </section>
 
   <section class="section">
